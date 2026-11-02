@@ -16,7 +16,7 @@
   <button class="menu" aria-label="Toggle menu" aria-expanded="false">Menu</button>
   <nav id="links">
     <a href="#about">About</a><a href="#cv">CV</a><a href="#publications">Publications</a>
-    <a href="#research">Research</a><a href="#team">Collaborators</a><a href="#teaching">Teaching</a><a href="#contact">Contact</a>
+    <a href="#research">Research</a><a href="#surveys">Surveys</a><a href="#notes">Reading notes</a><a href="#team">Collaborators</a><a href="#teaching">Teaching</a><a href="#contact">Contact</a>
   </nav>
 </header>
 
@@ -103,6 +103,24 @@
   <a class="btn" href="Sameer_CV.pdf">Download CV (PDF)</a>
 </section>
 
+<section id="surveys">
+  <h2>Redshift surveys</h2>
+  <p class="lead">Where each spectroscopic survey sits in redshift. Hover or tap a bar for details. Numbers are approximate; check the survey papers before citing.</p>
+  <div class="chips" id="sv-chips"></div>
+  <div class="zchart" id="sv-chart"></div>
+  <div class="detail" id="sv-detail"></div>
+  <h3>DESI at a glance</h3>
+  <ul class="cards" id="desi-box"></ul>
+</section>
+
+<section id="notes">
+  <h2>Reading notes</h2>
+  <p class="lead">Short summaries of papers I am reading or working on. Click a note to expand it.</p>
+  <input id="nt-q" type="search" placeholder="Search notes">
+  <div class="chips" id="nt-tags"></div>
+  <div id="nt-list"></div>
+</section>
+
 <section id="publications">
   <h2>Publications</h2>
   <p>Full list on <a href="https://ui.adsabs.harvard.edu/">NASA ADS</a> and <a href="https://scholar.google.com/">Google Scholar</a>.</p>
@@ -163,7 +181,11 @@
 </section>
 </main>
 <footer>© <span id="yr"></span> Sameer Malik</footer>
+<script src="data.js"></script>
 <script src="script.js"></script>
 <script src="interact.js"></script>
+<script src="hero3d.js"></script>
+<script src="explorer.js"></script>
+<script src="notes.js"></script>
 </body>
 </html>
