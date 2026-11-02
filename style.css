@@ -139,3 +139,6 @@ img,.zchart,.detail,.note,.pubs li,.cards li,.topic,.timeline li,.skymap{border-
 .lab input[type=range]{width:100%;padding:0;border:0;accent-color:var(--accent)}
 #rsd{width:100%;height:auto;background:var(--card);border:1px solid var(--line);border-radius:3px}
 #visits{margin-left:14px;font-size:14px}
+
+#bao .split{grid-template-columns:1.2fr 1fr;align-items:start}
+@media(max-width:760px){#bao .split{grid-template-columns:1fr}}
