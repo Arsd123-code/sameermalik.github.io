@@ -27,3 +27,7 @@ const NOTES = [
  {title:"Add the paper you are reading now",authors:"Authors",year:2026,arxiv:"",tags:["bispectrum"],status:"reading",
   q:"Question the paper asks.",m:"Method and data.",r:"Main result.",me:"How it connects to my work."}
 ];
+
+// Visitor counter: sign up free at goatcounter.com, pick a code (e.g. "sameermalik"), paste it here.
+// Then in GoatCounter: Settings -> enable "Allow adding visitor counts on your website".
+const GC_CODE = "";

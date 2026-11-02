@@ -6,7 +6,7 @@
 <title>Sameer Malik – Observational Cosmology</title>
 <meta name="description" content="PhD student in observational cosmology at IIT Kharagpur. Galaxy clustering, DESI, survey systematics and the bispectrum.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Public+Sans:wght@400;500;600&family=Caveat:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
   <button class="menu" aria-label="Toggle menu" aria-expanded="false">Menu</button>
   <nav id="links">
     <a href="#about">About</a><a href="#cv">CV</a><a href="#publications">Publications</a>
-    <a href="#research">Research</a><a href="#surveys">Surveys</a><a href="#notes">Reading notes</a><a href="#team">Collaborators</a><a href="#teaching">Teaching</a><a href="#contact">Contact</a>
+    <a href="#research">Research</a><a href="#surveys">Surveys</a><a href="#explore">Explore DESI</a><a href="#notes">Reading notes</a><a href="#team">Collaborators</a><a href="#teaching">Teaching</a><a href="#contact">Contact</a>
   </nav>
 </header>
 
@@ -126,6 +126,24 @@
   <div id="nt-list"></div>
 </section>
 
+<section id="explore">
+  <h2>Explore the DESI map</h2>
+  <p class="lead">Three public visualizations from the DESI collaboration and its members, and a small lab of my own that shows why redshift-space clustering looks distorted. Credits are under each item.</p>
+  <div class="vids">
+    <div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/rAvCOdbxaRY" title="DESI survey footprint growing" loading="lazy" allowfullscreen></iframe><h4>Growing the largest 3D map of the Universe</h4><p>How the DESI footprint fills in as observations accumulate. Credit: DESI collaboration (A. Raichoor); Milky Way panorama by A. Mellinger.</p></div>
+    <div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/djp5qkoHNak" title="DESI visualization" loading="lazy" allowfullscreen></iframe><h4>DESI visualization</h4><p>A flight through DESI data. Credit: DESI collaboration; see the channel page for the full credit.</p></div>
+  </div>
+  <div class="vids">
+    <div class="vid tall"><iframe src="https://dkirkby.github.io/desipano/" title="DESI focal plane panorama" loading="lazy"></iframe><h4>DESI focal plane panorama</h4><p>The 5,000 robotic fiber positioners. Pan, zoom and click the red boxes. Credit: David Kirkby (UC Irvine). <a href="https://dkirkby.github.io/desipano/">Open full screen</a></p></div>
+    <div class="vid tall"><iframe src="https://dkirkby.github.io/desi3d/" title="DESI3D" loading="lazy"></iframe><h4>DESI3D</h4><p>About 30,000 galaxies seen in roughly five hours of observing. Credit: David Kirkby (UC Irvine). <a href="https://dkirkby.github.io/desi3d/">Open full screen</a></p></div>
+  </div>
+  <h3>Redshift-space distortion lab</h3>
+  <p class="lead">Red points are galaxies in clusters, grey points are field galaxies. Random motions stretch clusters along the line of sight (fingers of God). Coherent infall squashes them (Kaiser effect). This is a toy model, not a simulation.</p>
+  <div class="lab"><label>Random velocities (fingers of God)<input id="rsd-fog" type="range" min="0" max="3" step=".05" value="0"></label>
+  <label>Coherent infall (Kaiser squashing)<input id="rsd-kai" type="range" min="0" max=".8" step=".02" value="0"></label></div>
+  <canvas id="rsd" aria-label="Toy redshift-space distortion demo"></canvas>
+</section>
+
 <section id="publications">
   <h2>Publications</h2>
   <p>Full list on <a href="https://ui.adsabs.harvard.edu/">NASA ADS</a> and <a href="https://scholar.google.com/">Google Scholar</a>.</p>
@@ -151,51 +169,9 @@
 <section id="team">
   <h2>Collaborators</h2>
   <ul class="cards">
-
-    <li>
-      <h3>
-        <a href="https://www.tifr.res.in/~shadab.alam/"
-           target="_blank" rel="noopener noreferrer">
-          Dr. Shadab Alam
-        </a>
-      </h3>
-      <p>TIFR Mumbai</p>
-      <p>DESI clustering and systematics</p>
-    </li>
-
-    <li>
-      <h3>
-        <a href="https://www.iitkgp.ac.in/department/PH/faculty/ph-somnath"
-           target="_blank" rel="noopener noreferrer">
-          Prof. Somnath Bharadwaj
-        </a>
-      </h3>
-      <p>IIT Kharagpur</p>
-      <p>Ph.D. supervisor, large-scale structure</p>
-    </li>
-
-    <li>
-      <h3>
-        <a href="https://sukhdeepsinghgill.github.io/index.html"
-           target="_blank" rel="noopener noreferrer">
-          Dr. Sukhdeep Singh Gill
-        </a>
-      </h3>
-      <p>TIFR Mumbai</p>
-      <P>Postdoc TIFR Mumbai</p>
-    </li>
-
-    <li>
-      <h3>
-        <a href="https://www.iitkgp.ac.in/department/PH/faculty/ph-sayan"
-           target="_blank" rel="noopener noreferrer">
-          Prof. Sayan Kar
-        </a>
-      </h3>
-      <p>IIT Kharagpur</p>
-      <p>M.Sc. supervisor, gravitation</p>
-    </li>
-
+    <li><h3>Dr. Shadab Alam</h3><p>TIFR Mumbai</p><p>DESI clustering and systematics</p></li>
+    <li><h3>Prof. Somnath Bharadwaj</h3><p>IIT Kharagpur</p><p>Ph.D. supervisor, large-scale structure</p></li>
+    <li><h3>Prof. Sayan Kar</h3><p>IIT Kharagpur</p><p>M.Sc. supervisor, gravitation</p></li>
   </ul>
 </section>
 
@@ -209,7 +185,7 @@
   <div class="split">
     <div>
       <p><a href="mailto:786sameermalikkhan@gmail.com">786sameermalikkhan@gmail.com</a></p>
-      <p>Department of Physics<br>Centre for Theoritical Studies (CTS)<br>Indian Institute of Technology Kharagpur<br>West Bengal, India</p>
+      <p>Department of Physics<br>Indian Institute of Technology Kharagpur<br>West Bengal, India</p>
       <ul class="social">
         <li><a href="https://orcid.org/">ORCID</a></li>
         <li><a href="https://scholar.google.com/">Google Scholar</a></li>
@@ -227,7 +203,7 @@
   </div>
 </section>
 </main>
-<footer>© <span id="yr"></span> Sameer Malik</footer>
+<footer>© <span id="yr"></span> Sameer Malik<span id="visits"></span></footer>
 <script src="data.js"></script>
 <script src="script.js"></script>
 <script src="interact.js"></script>
@@ -235,5 +211,7 @@
 <script src="explorer.js"></script>
 <script src="skymap.js"></script>
 <script src="notes.js"></script>
+<script src="counter.js"></script>
+<script src="rsd.js"></script>
 </body>
 </html>
