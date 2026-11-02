@@ -16,7 +16,7 @@
   <button class="menu" aria-label="Toggle menu" aria-expanded="false">Menu</button>
   <nav id="links">
     <a href="#about">About</a><a href="#cv">CV</a><a href="#publications">Publications</a><a href="#resources">Resources</a>
-    <a href="#research">Research</a><a href="#surveys">Surveys</a><a href="#bao">BAO</a><a href="#explore">Explore DESI</a><a href="#notes">Reading notes</a><a href="#team">Collaborators</a><a href="#teaching">Teaching</a><a href="#contact">Contact</a>
+    <a href="#research">Research</a><a href="#surveys">Surveys</a><a href="#notes">Reading notes</a><a href="#team">Collaborators</a><a href="#teaching">Teaching</a><a href="#contact">Contact</a>
   </nav>
 </header>
 
@@ -124,21 +124,15 @@
   <input id="nt-q" type="search" placeholder="Search notes">
   <div class="chips" id="nt-tags"></div>
   <div id="nt-list"></div>
-</section>
-
-<section id="bao">
-  <h2>Baryon acoustic oscillations (BAO)</h2>
-  <div class="split bao">
+  <details class="note"><summary><span class="st done">topic</span><strong>Baryon acoustic oscillations (BAO)</strong><small>Two-sentence intro and a video</small></summary>
+    <div class="note-body"><div class="bao2">
     <div>
       <p>BAO are sound waves from the early Universe, frozen in place, that left galaxies slightly preferring a separation of about 150 Mpc. Because that size is known, it acts as a standard ruler for measuring distance and expansion over cosmic time.</p>
     </div>
     <div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/jpXuYc-wzk4?start=79" title="Baryon acoustic oscillations video" loading="lazy" allowfullscreen></iframe><h4>BAO explained (video)</h4><p>Starts at 1:19. <a href="https://www.youtube.com/watch?v=jpXuYc-wzk4&t=79s">Watch on YouTube</a>. Credit: see the video's channel.</p></div>
-  </div>
-</section>
-
-<section id="explore">
-  <h2>Explore the DESI map</h2>
-  <p class="lead">Three public visualizations from the DESI collaboration and its members, and a small lab of my own that shows why redshift-space clustering looks distorted. Credits are under each item.</p>
+  </div></div></details>
+  <details class="note"><summary><span class="st done">topic</span><strong>Explore the DESI map</strong><small>Videos, interactive 3D views and a redshift-space distortion demo</small></summary>
+    <div class="note-body"><p class="lead">Three public visualizations from the DESI collaboration and its members, and a small lab of my own that shows why redshift-space clustering looks distorted. Credits are under each item.</p>
   <div class="vids">
     <div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/rAvCOdbxaRY" title="DESI survey footprint growing" loading="lazy" allowfullscreen></iframe><h4>Growing the largest 3D map of the Universe</h4><p>How the DESI footprint fills in as observations accumulate. Credit: DESI collaboration (A. Raichoor); Milky Way panorama by A. Mellinger.</p></div>
     <div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/djp5qkoHNak" title="DESI visualization" loading="lazy" allowfullscreen></iframe><h4>DESI visualization</h4><p>A flight through DESI data. Credit: DESI collaboration; see the channel page for the full credit.</p></div>
@@ -151,7 +145,7 @@
   <p class="lead">Red points are galaxies in clusters, grey points are field galaxies. Random motions stretch clusters along the line of sight (fingers of God). Coherent infall squashes them (Kaiser effect). This is a toy model, not a simulation.</p>
   <div class="lab"><label>Random velocities (fingers of God)<input id="rsd-fog" type="range" min="0" max="3" step=".05" value="0"></label>
   <label>Coherent infall (Kaiser squashing)<input id="rsd-kai" type="range" min="0" max=".8" step=".02" value="0"></label></div>
-  <canvas id="rsd" aria-label="Toy redshift-space distortion demo"></canvas>
+  <canvas id="rsd" aria-label="Toy redshift-space distortion demo"></canvas></div></details>
 </section>
 
 <section id="publications">
@@ -189,39 +183,9 @@
 <section id="team">
   <h2>Collaborators</h2>
   <ul class="cards">
-
-    <li>
-      <h3>
-        <a href="https://www.tifr.res.in/~shadab.alam/"
-           target="_blank" rel="noopener noreferrer">
-          Dr. Shadab Alam
-        </a>
-      </h3>
-      <p>TIFR Mumbai</p>
-      <p>DESI clustering and systematics</p>
-    </li>
-
-    <li>
-      <h3>
-        <a href="https://www.iitkgp.ac.in/department/PH/faculty/ph-somnath"
-           target="_blank" rel="noopener noreferrer">
-          Prof. Somnath Bharadwaj
-        </a>
-      </h3>
-      <p>IIT Kharagpur</p>
-      <p>Ph.D. supervisor, large-scale structure</p>
-    </li>
-
-    <li>
-      <h3>
-        <a href="https://sukhdeepsinghgill.github.io/index.html"
-           target="_blank" rel="noopener noreferrer">
-          Dr. Sukhdeep Singh Gill
-        </a>
-      </h3>
-      <p>Postdoc TIFR</p>
-    </li>
-
+    <li><h3>Dr. Shadab Alam</h3><p>TIFR Mumbai</p><p>DESI clustering and systematics</p></li>
+    <li><h3>Prof. Somnath Bharadwaj</h3><p>IIT Kharagpur</p><p>Ph.D. supervisor, large-scale structure</p></li>
+    <li><h3>Prof. Sayan Kar</h3><p>IIT Kharagpur</p><p>M.Sc. supervisor, gravitation</p></li>
   </ul>
 </section>
 
