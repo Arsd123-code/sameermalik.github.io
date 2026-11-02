@@ -30,4 +30,4 @@ const NOTES = [
 
 // Visitor counter: sign up free at goatcounter.com, pick a code (e.g. "sameermalik"), paste it here.
 // Then in GoatCounter: Settings -> enable "Allow adding visitor counts on your website".
-const GC_CODE = "";
+const GC_CODE = "smalikiitkgp";
