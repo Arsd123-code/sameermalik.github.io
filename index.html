@@ -109,6 +109,11 @@
   <div class="chips" id="sv-chips"></div>
   <div class="zchart" id="sv-chart"></div>
   <div class="detail" id="sv-detail"></div>
+  <h3>Sky coverage (schematic)</h3>
+  <p class="lead">Approximate footprints in equatorial coordinates (Mollweide, equal area). Toggle surveys, and move the cursor over the map to read RA, Dec and which surveys cover that spot. The areas shown come from simple cuts in declination and Galactic latitude, so they only roughly match the real survey masks.</p>
+  <div class="chips" id="sky-legend"></div>
+  <canvas id="sky-map" class="skymap" role="img" aria-label="Schematic sky map of survey footprints"></canvas>
+  <p class="mapread" id="sky-read"></p>
   <h3>DESI at a glance</h3>
   <ul class="cards" id="desi-box"></ul>
 </section>
@@ -186,6 +191,7 @@
 <script src="interact.js"></script>
 <script src="hero3d.js"></script>
 <script src="explorer.js"></script>
+<script src="skymap.js"></script>
 <script src="notes.js"></script>
 </body>
 </html>

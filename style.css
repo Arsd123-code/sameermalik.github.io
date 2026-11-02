@@ -97,3 +97,10 @@ main,footer{position:relative;z-index:1}
 .tag{display:inline-block;font-size:13px;padding:1px 10px;margin-right:6px;border:1px solid var(--line);border-radius:99px;color:var(--mute)}
 #nt-q{max-width:360px;margin:0 0 6px}
 @media(max-width:760px){.zaxis,.zrow{grid-template-columns:110px 1fr}.zrow>span{font-size:12px}}
+
+/* ---- Sky map and note tools ---- */
+.skymap{display:block;width:100%;height:auto;background:var(--card);border:1px solid var(--line);border-radius:14px;cursor:crosshair}
+.mapread{min-height:1.6em;color:var(--mute);font-size:15px;margin:8px 0}
+.sw{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:7px}.chip em{font-style:normal;color:inherit;opacity:.75;font-size:12px}
+.tools{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.mini{font:500 13px var(--sans);padding:3px 12px;border-radius:6px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}.mini:hover{border-color:var(--accent)}
