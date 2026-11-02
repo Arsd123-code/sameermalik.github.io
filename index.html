@@ -15,7 +15,7 @@
   <a class="brand" href="#home">Sameer Malik</a>
   <button class="menu" aria-label="Toggle menu" aria-expanded="false">Menu</button>
   <nav id="links">
-    <a href="#about">About</a><a href="#cv">CV</a><a href="#publications">Publications</a>
+    <a href="#about">About</a><a href="#cv">CV</a><a href="#publications">Publications</a><a href="#resources">Resources</a>
     <a href="#research">Research</a><a href="#surveys">Surveys</a><a href="#bao">BAO</a><a href="#explore">Explore DESI</a><a href="#notes">Reading notes</a><a href="#team">Collaborators</a><a href="#teaching">Teaching</a><a href="#contact">Contact</a>
   </nav>
 </header>
@@ -130,10 +130,7 @@
   <h2>Baryon acoustic oscillations (BAO)</h2>
   <div class="split bao">
     <div>
-      <p>Before the Universe was about 380,000 years old, light and ordinary matter formed a hot plasma. Pressure waves, which are sound waves, travelled through it. When the plasma cooled and the matter decoupled from light, those waves stopped, leaving a slight preference for galaxies to be separated by a fixed distance.</p>
-      <p>That distance is the sound horizon, about 150 Mpc in today's units, and it is set by early-Universe physics we can predict. It shows up as a small bump in the galaxy correlation function, or as faint wiggles in the power spectrum. Because its true size is known, it works as a <strong>standard ruler</strong>.</p>
-      <p>By measuring how large the ruler appears across the sky and along the line of sight, we get the distance to a galaxy sample and the expansion rate at its redshift. Repeating this over many redshifts traces the expansion history, which constrains dark energy. DESI measures BAO with several tracers, from bright galaxies at low redshift to quasars and the Lyman-alpha forest at high redshift. The effect was first detected in galaxy surveys in 2005.</p>
-      <p><em>Related to my work:</em> BAO uses the two-point signal, while the bispectrum adds information on top of it. Survey systematics such as fiber collisions must be controlled so they do not bias either one.</p>
+      <p>BAO are sound waves from the early Universe, frozen in place, that left galaxies slightly preferring a separation of about 150 Mpc. Because that size is known, it acts as a standard ruler for measuring distance and expansion over cosmic time.</p>
     </div>
     <div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/jpXuYc-wzk4?start=79" title="Baryon acoustic oscillations video" loading="lazy" allowfullscreen></iframe><h4>BAO explained (video)</h4><p>Starts at 1:19. <a href="https://www.youtube.com/watch?v=jpXuYc-wzk4&t=79s">Watch on YouTube</a>. Credit: see the video's channel.</p></div>
   </div>
@@ -164,6 +161,16 @@
   <ul class="pubs" id="pubs-first"></ul>
   <h3>Co-authored papers</h3>
   <ul class="pubs" id="pubs-co"></ul>
+</section>
+
+<section id="resources">
+  <h2>Cosmology resources</h2>
+  <p class="lead">Lecture notes, courses, tools and reading lists I find useful. Search, or filter by type. Links open in a new tab.</p>
+  <p class="credit">Many of these links come from the <a href="https://github.com/jrdmb/cosmology-resource-materials" target="_blank" rel="noopener">Cosmology Resource Materials</a> collection by jrdmb on GitHub. Thanks to them for compiling it.</p>
+  <input id="res-q" type="search" placeholder="Search links">
+  <div class="chips" id="res-tags"></div>
+  <p class="mapread" id="res-n"></p>
+  <ul class="rlist" id="res-list"></ul>
 </section>
 
 <section id="research">
@@ -224,6 +231,7 @@
 <script src="explorer.js"></script>
 <script src="skymap.js"></script>
 <script src="notes.js"></script>
+<script src="resources.js"></script>
 <script src="counter.js"></script>
 <script src="rsd.js"></script>
 </body>
