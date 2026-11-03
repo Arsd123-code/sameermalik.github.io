@@ -1,0 +1,14 @@
+{
+  "_policy": "license_status stays 'to_verify' until a human has read the provider's terms. The site must not publish a dataset whose status is not 'verified'. Never fill citation/license from memory.",
+  "datasets": [
+    {"id":"planck2018_params","what":"Base-LCDM parameters","citation":"Planck Collaboration 2020, A&A 641, A6, arXiv:1807.06209","used_in":["js/constants.js"],"values_verified":true,"license_status":"to_verify"},
+    {"id":"desi_dr2_bao","what":"BAO distances, DR2","citation":"DESI Collaboration, arXiv:2503.14738 and 2503.14739","used_in":["BAO tab"],"values_verified":"partial (Omega_m only)","license_status":"to_verify","todo":"copy the per-tracer table into data/desi_dr2_bao.json from the paper"},
+    {"id":"desi_public_release","what":"DESI public catalogs / spectra","citation":"to_fetch","used_in":["Home zoom","Sky Atlas","Fiber Collisions"],"values_verified":false,"license_status":"to_verify"},
+    {"id":"pantheon_plus","what":"SN Ia distances","citation":"to_fetch","used_in":["Inference tab"],"values_verified":false,"license_status":"to_verify"},
+    {"id":"gaia","what":"Star catalog (subset)","citation":"to_fetch","used_in":["Home zoom"],"values_verified":false,"license_status":"to_verify"},
+    {"id":"sdss","what":"Galaxy catalog (subset)","citation":"to_fetch","used_in":["Home zoom"],"values_verified":false,"license_status":"to_verify"},
+    {"id":"abacussummit","what":"N-body halo catalogs","citation":"to_fetch","used_in":["Clustering Lab"],"values_verified":false,"license_status":"to_verify"},
+    {"id":"ligo_open_data","what":"GW strain","citation":"to_fetch","used_in":["GW tab"],"values_verified":false,"license_status":"to_verify"},
+    {"id":"nasa_apod","what":"Picture of the day","citation":"to_fetch","used_in":["Universe Today"],"values_verified":false,"license_status":"to_verify","note":"individual images may carry their own copyright"}
+  ]
+}
